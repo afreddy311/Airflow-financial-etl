@@ -1,0 +1,32 @@
+
+---
+
+## 📄 .gitignore  
+
+```gitignore
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+.venv/
+env/
+venv/
+
+# Logs de Airflow
+logs/
+*.log
+
+# Base de datos local de Airflow
+airflow.db
+unittests.cfg
+
+# Configuración sensible
+.env
+*.env
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
