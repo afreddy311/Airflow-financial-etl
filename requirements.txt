@@ -1,0 +1,7 @@
+# Librerías de análisis de datos
+pandas
+matplotlib
+seaborn
+
+# Orquestación con Airflow
+apache-airflow==2.9.1
