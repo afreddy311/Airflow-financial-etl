@@ -1,0 +1,20 @@
+[2025-09-05T16:29:55.093+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-05T16:29:55.114+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_finanzas_dag.load manual__2025-09-05T16:29:38.072190+00:00 [queued]>
+[2025-09-05T16:29:55.122+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_finanzas_dag.load manual__2025-09-05T16:29:38.072190+00:00 [queued]>
+[2025-09-05T16:29:55.123+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-09-05T16:29:55.140+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load> on 2025-09-05 16:29:38.072190+00:00
+[2025-09-05T16:29:55.159+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=152) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-09-05T16:29:55.157+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'etl_finanzas_dag', 'load', 'manual__2025-09-05T16:29:38.072190+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/etl_finanzas_dag.py', '--cfg-path', '/tmp/tmp7owi5oe4']
+[2025-09-05T16:29:55.161+0000] {standard_task_runner.py:63} INFO - Started process 159 to run task
+[2025-09-05T16:29:55.161+0000] {standard_task_runner.py:91} INFO - Job 7: Subtask load
+[2025-09-05T16:29:55.225+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_finanzas_dag.load manual__2025-09-05T16:29:38.072190+00:00 [running]> on host 2915bafccca2
+[2025-09-05T16:29:55.391+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Freddy' AIRFLOW_CTX_DAG_ID='etl_finanzas_dag' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2025-09-05T16:29:38.072190+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-05T16:29:38.072190+00:00'
+[2025-09-05T16:29:55.393+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-05T16:29:55.449+0000] {logging_mixin.py:188} WARNING - /opt/airflow/dags/etl_finanzas_dag.py:23 FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-09-05T16:29:55.511+0000] {logging_mixin.py:188} INFO -  Datos cargados en data/resumen_gasto_mensual.csv
+[2025-09-05T16:29:55.512+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-09-05T16:29:55.512+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-05T16:29:55.519+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_finanzas_dag, task_id=load, run_id=manual__2025-09-05T16:29:38.072190+00:00, execution_date=20250905T162938, start_date=20250905T162955, end_date=20250905T162955
+[2025-09-05T16:29:55.578+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-09-05T16:29:55.590+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-05T16:29:55.591+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
