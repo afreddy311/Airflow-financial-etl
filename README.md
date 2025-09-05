@@ -8,7 +8,7 @@ El objetivo es mostrar habilidades en:
 - Limpieza, transformación y carga de datos  
 - Visualización y análisis financiero
 
-⚙️ Requisitos Previos
+# ⚙️ Requisitos Previos
 
 Docker Desktop
  instalado y corriendo
@@ -21,7 +21,7 @@ Verifica instalación con:
 docker --version
 docker compose version
 
-▶️ Instrucciones de Uso
+# ▶️ Instrucciones de Uso
 
 Clonar el repositorio
 
@@ -45,7 +45,8 @@ Actívalo (switch ON)
 
 Haz clic en Trigger DAG para ejecutarlo manualmente
 
-Ver resultados
+# Ver resultados
+
 El pipeline generará un archivo:
 
 data/resumen_gastos_mensual.csv
@@ -54,7 +55,7 @@ con el gasto total agrupado por mes y categoría.
 
 
 
-📊 Funcionalidades del Pipeline
+# 📊 Funcionalidades del Pipeline
 
 Extracción (Extract): lectura de transacciones desde CSV
 
@@ -72,7 +73,7 @@ Orquestación: Airflow gestiona la secuencia ETL y programaciones
 
 
 
-🧰 Tecnologías Utilizadas
+# 🧰 Tecnologías Utilizadas
 
 Apache Airflow (orquestación de workflows)
 
@@ -84,13 +85,13 @@ Pandas (procesamiento de datos)
 
 
 
-👤 Autor
+# 👤 Autor
 
 Proyecto desarrollado por mi persona Freddy De la cruz , como parte de un portafolio en Ingeniería de Datos.
 
 
 
-🚀 Nota 
+# 🚀 Nota 
 
 Este proyecto demuestra la capacidad de:
 
